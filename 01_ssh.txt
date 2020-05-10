@@ -1,0 +1,28 @@
+// SSH - SECURE SHELL PROTOCOL
+// can communicate with remote machines
+
+// ssh {user}@{host}
+
+// shh uses both symmetrical and asymmetrical encryptions
+
+// SYMMETRICAL ENCRYPTION
+// "secret" >> {shared key} >> "sdf2vj34" >> {shared key} >> "secret"
+// can be crypted and decrypted with {shared key}
+
+// ASYMMETRICAL ENCRYPTION
+// Key Exchange Algorithm
+// two separate keys - public and private
+// public key - can be shared
+// private key - never ever share it
+// public keys encrypt messages, only their paired private keys can decrypt them
+
+// HASHING
+// middleman can pretend that he's the Client or the Host and steal data
+// that is why encryption is extended with Hashing too
+// hashed message can't be encrypted without key and authentication
+
+1. Diffie-Hellman Key Exchange
+2. Arrive at Symmetric Key
+3. Make sure of no funny business
+4. Authenticate User
+ 
