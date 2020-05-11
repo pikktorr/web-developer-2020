@@ -1,0 +1,20 @@
+// PERFORMANCE
+
+minimize files and images
+
+FILES
+- bundlers minifies files automatically
+
+IMAGES
+- transparent images: use PNG
+- animations: use GIF
+- colourful images: use JPG
+- icons, logos, illustrations: use SVG
+- Reduce PNG with TinyPNG
+- Reduce JPG with JPEG-optimizer
+- Choose simple illustrations over highly detailed photos
+- Always lower JPEG image quality 30-60%
+- Resize image based on size it will be displayed 
+- Display different sized images for different sized backgrounds
+- Use CDNs like imgix 
+- Remove image metadata - verexif.com
