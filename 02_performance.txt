@@ -17,4 +17,4 @@ IMAGES
 - Resize image based on size it will be displayed 
 - Display different sized images for different sized backgrounds
 - Use CDNs like imgix 
-- Remove image metadata - verexif.com
+- Remove image metadata - verexif.com 

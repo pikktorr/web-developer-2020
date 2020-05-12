@@ -2,6 +2,9 @@ body {
   background: yellow;
 }
 
+h1 {
+  color: rgb(61, 61, 61);
+}
 /* Small screens - MOBILE */
 /* Define mobile styles - Mobile First */
 @media only screen {

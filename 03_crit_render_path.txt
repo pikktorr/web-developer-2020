@@ -1,0 +1,42 @@
+CRITICAL RENDER PATH
+
+HTML >> DOM tree - structure of website
+CSS >> CSSOM tree - styling of the website
+JS >> browser executes any changes to DOM and CSSOM
+Browser combines DOM + CSSOM >> Render Tree
+Figuring out the layout
+Painting the pixels
+Finally the webpage displaying on the browser
+
+1. Optimize HTML file
+- load CSS files as soon as possible - in the <head> tag
+- load JS files as late as possible - end of the <body>, right before </body>
+- if the script is before the styles, it can block the rendering and stylesheet downloading
+
+2. CSS
+- render blocking, waiting for CSS object model to style the structure
+- only load whatever is needed
+- above the fold loading - only load the styles which are displayed first
+- media attributes
+- less specificity
+
+3. Javascript - Javascript is a Parser Blocking
+- can change both the DOM and CSSOM
+- once a script tag is found in the DOM construction is paused
+- the script gets loaded, but can't be executed yet
+- once the CSSOM is constructed, javascript can be executed 
+
+
+- Normal Script tag
+* critical, app scripts should be here
+- Load Scripts asynchronously
+* script is downloaded with another thread, so HTML parsing won't stop until script execution
+* async should be used when we dont modify the DOM with script
+* third party scripts
+
+- Defer Loading of Scripts
+* script is downloaded with another thread and after the HTML is fully parsed, script will be executed
+
+- Minimize DOM manipulation
+
+- Avoid long running Javascript
