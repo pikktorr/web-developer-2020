@@ -26,7 +26,6 @@ Finally the webpage displaying on the browser
 - the script gets loaded, but can't be executed yet
 - once the CSSOM is constructed, javascript can be executed 
 
-
 - Normal Script tag
 * critical, app scripts should be here
 - Load Scripts asynchronously
@@ -38,5 +37,4 @@ Finally the webpage displaying on the browser
 * script is downloaded with another thread and after the HTML is fully parsed, script will be executed
 
 - Minimize DOM manipulation
-
 - Avoid long running Javascript

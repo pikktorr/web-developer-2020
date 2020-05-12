@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css" media="all" />
-    <!-- Download in the background and not disrupt the page load if screen doesnt match -->
-    <link
-      rel="stylesheet"
-      href="styles3.css"
-      media="only screen and (min-width: 481px) and (max-width: 768px)"
-    />
     <!-- Internal CSS - Pro: allows us to not have to request CSS file -->
     <style>
       h1 {
@@ -22,6 +16,7 @@
   <body>
     <!-- Inline CSS -->
     <h1 style="font-weight: 100;">Greetings</h1>
+    <img src="./img/mushroom.png" alt="" srcset="" />
     <button>Click</button>
     <h2 class="important">Important above the fold content</h2>
     <h2 class="secondary">
@@ -37,6 +32,8 @@
       button.style.width = "80px";
     </script>
     <script src="./script.js"></script>
+    <script src="./script2.js" async></script>
+    <script src="./script3.js" defer></script>
     <script type="text/javascript">
       const loadStylesheet = (src) => {
         if (document.createStylesheet) {
