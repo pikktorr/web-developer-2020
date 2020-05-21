@@ -1,0 +1,11 @@
+BUNDLERS
+
+- Webpack - lot of configuration, use for big projects with team
+- Parcel - fast, no configuration, for small projects without team
+- Rollup.js - similar like Webpack, good at tossing out code which we don't use, rolling out own npm packages
+
+WEBPACK
+- entry - where webpack enters the project
+- output - where is the output
+- loaders
+- plugins

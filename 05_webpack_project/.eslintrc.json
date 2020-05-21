@@ -1,0 +1,6 @@
+{
+  "rules": {
+    // console statements: warn or error
+    // "no-console": "warn"
+  }
+}
