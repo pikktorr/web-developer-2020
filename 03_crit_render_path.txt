@@ -21,6 +21,7 @@ Finally the webpage displaying on the browser
 - less specificity
 
 3. Javascript - Javascript is a Parser Blocking
+   Javascript events partially redraw the page when triggered
 - can change both the DOM and CSSOM
 - once a script tag is found in the DOM construction is paused
 - the script gets loaded, but can't be executed yet
@@ -37,4 +38,4 @@ Finally the webpage displaying on the browser
 * script is downloaded with another thread and after the HTML is fully parsed, script will be executed
 
 - Minimize DOM manipulation
-- Avoid long running Javascript
+- Avoid long running Javascript (e.g. alert())

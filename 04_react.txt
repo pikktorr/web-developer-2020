@@ -1,0 +1,20 @@
+useful extensions, utilities
+- React Router - for routing, changing pages and urls
+- Rambda - added functions to Javascript
+- Lodash - extra tools
+- Reselect
+- Redux-Saga - supercharged Redux-thunk
+- Immutable.js 
+
+Styling in React:
+- Glamorous - maintanable CSS with React
+- Styled Components
+- CSS Modules
+- Material-ui 
+- Semantic-ui 
+
+Publishing:
+- Gatsby.js - good for static websites
+- Next.js - server side render apps
+
+
