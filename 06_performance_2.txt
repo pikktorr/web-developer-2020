@@ -1,0 +1,11 @@
+PERFORMANCE II
+- OPTIMIZING CODE
+- SPLITTING CODE
+- PROGRESSIVE WEB APPS
+
+OPTIMIZING CODE -> Google Chrome -> Performance tab
+
+SPLITTING CODE - progressive bootstrapping
+- e.g. split HOME, ABOUT and CONTACT javascript into separate files
+- at first only load up home page js file
+- we want to send down a minimal page, then lazy load stuff 
