@@ -1,0 +1,43 @@
+PWA - PROGRESSIVE WE APP
+- native application like apps in the browser
+- google supports it well, apple not so much
+- create-react-app fully supports it, creates PWA out-of-the-box
+
+Google Lighthouse
+- plugin
+- install, run it on any website
+- shows how close is the website to PWA
+
+HTTPS
+- secure, encrypted
+- requirement for PWAs
+- github pages provides automatically https
+- Let's Encrypt, Cloudflare
+
+APP MANIFEST
+- manifest.json
+- how the app looks like as an app
+- include icons in it
+
+SERVICE WORKER
+- can work offline
+- adds programmable proxy
+- helps background syncs, push notifications
+- service worker checks in Web API: Cache API if files (html, css, js, images, etc) are already downloaded
+- if so, there is no network request -> can work offline
+  WITHOUT CREATE-REACT-APP
+  - download sw-precache
+  - in package.json:
+  "scripts":{
+    "build": "... build && sw-precache --config=sw-precache-config.js"
+  }
+  - index.html: 
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function(){
+          navigator.serviceWorker.register("/service-worker.js");
+        })
+      }
+    </script>
+  - manifest.json file
+  - sw-precache-config.js file

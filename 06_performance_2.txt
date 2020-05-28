@@ -9,3 +9,15 @@ SPLITTING CODE - progressive bootstrapping
 - e.g. split HOME, ABOUT and CONTACT javascript into separate files
 - at first only load up home page js file
 - we want to send down a minimal page, then lazy load stuff 
+
+TREE SHAKING
+- removes unused code, done by bundlers
+- dead code elimination
+
+AVOID BLOCKING MAIN THREAD
+
+AVOID MEMORY LEAKS
+- dont keep adding memory 
+- remove unused event listeners
+
+AVOID MULTIPLE RE-RENDERING

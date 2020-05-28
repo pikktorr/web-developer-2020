@@ -1,3 +1,6 @@
+"use strict";
+a = "b";
+console.log(a);
 // 1. READING THE JAVASCRIPT FILE
 console.log("this is the first script");
 // 2. FINISH THE BUILT DOM TREE
@@ -8,3 +11,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
 window.addEventListener("load", (event) => {
   console.log("All resources finished loading");
 });
+
+const sum = (num1, num2) => num1 + num2;
