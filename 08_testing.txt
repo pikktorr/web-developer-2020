@@ -1,0 +1,42 @@
+TESTING
+- another file, which is only in development, not production
+
+UNIT TESTS
+- tests individual functions
+- easiest to implement
+- testing pure functions
+
+INTEGRATION TESTS
+- how different pieces of code work together
+- testing components together
+
+AUTOMATION TESTS
+- UI tests in the browser
+- automated or people can do it
+- most expensive to implement
+
+PIECES OF TESTING:
+- testing library, scaffolding
+  (Jasmine, Jest, Mocha)
+
+- assertion library, assertion functions
+  expect, to, not, equal, same, but, does
+  (Jasmine, Jest, Chai)
+
+- test runner
+  (Jasmine, Jest, Mocha, Karma)
+
+- mock, spies, stubs
+  spies provide info about functions
+  stubing, replace functions with a function to ensure expected behavior happens
+  e.g. fake server
+  mocks, faking a function, test different part of process
+  (Jasmine, Jest, Sinon)
+
+- code coverage
+  shows how good is the coverage with tests 
+  (Istanbul, Jest)
+
+SNAPSHOT TESTING
+
+ENZYME (from AirBnB)
