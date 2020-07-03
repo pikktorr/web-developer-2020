@@ -1,0 +1,70 @@
+SECURITY
+
+- INJECTIONS
+  most common attacks - SQL injection
+  injecting a code into another
+
+  - Sanitize input - only allow the expected input, WHITELIST/BLACKLIST
+    check the input - if not the proper type, discard it
+  - Parametrize Queries, prepared SQL statements with functions 
+  - Knex.js or other ORMS
+  - DON'T TRUST USER INPUT
+
+- 3RD PARTY LIBRARIES
+  npm
+  be careful with them, use well-known packages
+  - nsp => npm audit - gives info about package vulnerability
+    update dependencies often
+  - snyk - checks node modules for vulnerability
+
+- LOGGING
+  insufficient logging - attack systems
+  an attack is found after ~200 days 
+  npm install winston
+  npm install Morgan
+  keep logging away from client
+
+- HTTPS EVERYWHERE
+  SSL/TLS Certificates
+  secure tunnel for text
+  "letsencrypt.org" and "cloudflare.com" and "github.com"
+  if your website uses a form, use https
+  DDOS attack - when a server is crashed under huge information from many clients e.g. with bot networks
+
+- XSS & CSRF
+  Cross Site Scripting & Cross Site Request Forgery
+  XSS - app uses data without proper validation, can alter website across networks, session hijacking
+    e.g. with img tag script with alert => everyone who sees that page, gets the alert window!! 
+  CSRF - using urls with query strings to do evil things
+  to prevent CSRF => set headers, set cookies secure 
+  "
+  response.cookie("session", "1", { httpOnly: true }); // only HTTP can access the cookie, no javascript
+  response.cookie("session", "1", { secure: true });
+  response.set({
+    "Content-Security-Policy": "script-src 'self' 'https://apis.google.com' ",
+  });
+  "
+  - Sanitize input
+  - No eval()
+  - No document.write()
+  - Content Security Policy
+  - Secure + HTTPOnly Cookies (e.g. use npm csurf)
+
+- CODE SECRETS
+  Environmental Variables
+  - when we want to hide our api key
+  - when we want to connect to a database with username and password
+  Commit History
+  - dont ever commit secrets, passwords to github, because it's searchable
+
+- Secure headers
+  npm install helmet
+  hide headers
+
+- Access control
+
+- Data management
+
+- Dont trust anyone
+
+- Authentication 

@@ -1,0 +1,10 @@
+CSR vs SSR
+
+CSR
+  pros:
+    Rich interactions
+    Faster response
+    Web applications
+  cons:
+    Low SEO (Search Engine Optimization) potentital
+    Longer Initial Load
